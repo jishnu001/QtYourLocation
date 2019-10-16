@@ -6,21 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>619</width>
-    <height>265</height>
+    <width>436</width>
+    <height>262</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Find your location</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>184</width>
-      <height>23</height>
+      <x>10</x>
+      <y>10</y>
+      <width>411</width>
+      <height>201</height>
      </rect>
     </property>
     <layout class="QFormLayout" name="formLayout">
@@ -33,6 +33,71 @@
      </item>
      <item row="0" column="1">
       <widget class="QLineEdit" name="countryText"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="cityLabel">
+       <property name="text">
+        <string>City</string>
+       </property>
+       <property name="indent">
+        <number>-4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="cityText"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="regionLabel">
+       <property name="text">
+        <string>Region</string>
+       </property>
+       <property name="indent">
+        <number>-4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="regionText"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="latLabel">
+       <property name="text">
+        <string>Lat</string>
+       </property>
+       <property name="indent">
+        <number>-4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="latText"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lonLabel">
+       <property name="text">
+        <string>Lon</string>
+       </property>
+       <property name="indent">
+        <number>-4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lonText"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="ipLabel">
+       <property name="text">
+        <string>Public IP</string>
+       </property>
+       <property name="indent">
+        <number>-4</number>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="ipText"/>
      </item>
     </layout>
    </widget>

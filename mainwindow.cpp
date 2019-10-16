@@ -33,7 +33,14 @@ void MainWindow::parseOutput(QNetworkReply* reply)
     }
     else {
         ui->countryText->setText(json_obj.value("country").toString());
-        QVariantMap m = json_obj.toVariantMap();
+        //QVariantMap m = json_obj.toVariantMap();
+        ui->cityText->setText(json_obj.value("city").toString());
+        ui->regionText->setText(json_obj.value("regionName").toString());
+        ui->ipText->setText(json_obj.value("query").toString());
+        QVariantMap qmap = json_obj.toVariantMap();
+        ui->latText->setText(qmap["lat"].toString());
+        ui->lonText->setText(qmap["lon"].toString());
+
 
     }
 
