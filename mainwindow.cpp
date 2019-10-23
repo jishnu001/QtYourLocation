@@ -29,9 +29,11 @@ void MainWindow::parseOutput(QNetworkReply* reply)
     QJsonDocument json = QJsonDocument::fromJson(b);
     QJsonObject json_obj = json.object();
     if(json_obj.isEmpty()){
-        ui->countryText->setText("Error parsing");
+        ui->statusBar->showMessage("Error parsing data");
     }
     else {
+        ui->statusBar->showMessage("Data loaded");
+
         ui->countryText->setText(json_obj.value("country").toString());
         //QVariantMap m = json_obj.toVariantMap();
         ui->cityText->setText(json_obj.value("city").toString());
